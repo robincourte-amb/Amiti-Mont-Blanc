@@ -1,3 +1,8 @@
+html {
+  scroll-padding-top: 7vh;
+  scroll-behavior: smooth; /* Ajoute un effet de glissement fluide très agréable */
+}
+
 * {
   margin: 0;
   padding: 0;

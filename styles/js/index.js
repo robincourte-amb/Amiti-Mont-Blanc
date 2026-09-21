@@ -1,3 +1,21 @@
+// On récupère la navbar via son ID
+  const navbar = document.querySelector(".navbar");
+  const navbarText = document.querySelector(".nav-text");
+
+  // On écoute le défilement de la page
+  window.addEventListener('scroll', () => {
+    
+    // Si on a scrollé de plus de 50 pixels vers le bas
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+      navbarText.classList.add('scrolled'); // On ajoute le nouveau style
+    } else {
+      navbar.classList.remove('scrolled');
+      navbarText.classList.remove('scrolled'); // Sinon on l'enlève
+    }
+    
+  });
+
 const Carousel = (() => {
     const getActiveSlide = () =>
         document.querySelector(".carousel__slide.active");

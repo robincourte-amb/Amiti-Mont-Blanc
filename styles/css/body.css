@@ -27,3 +27,40 @@ h2 {
 a {
   text-decoration: none;
 }
+
+/* Masque la scrollbar sur Chrome/Safari/Edge */
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    /* Masque la scrollbar sur Firefox */
+    html {
+        scrollbar-width: none;
+    }
+
+body {
+  --sb-track-color: #f8f9fa;
+  --sb-thumb-color: #c15c3d;
+  --sb-size: 10px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 3px;
+  
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}

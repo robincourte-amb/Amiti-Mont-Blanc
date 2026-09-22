@@ -188,3 +188,61 @@ new Chart(document.getElementById("sourceChart"), {
         }
     }
 });
+
+// ----- ENVOYER UN MESSAGE -----
+
+document
+  .getElementById("send-btn")
+  .addEventListener("click", async function (e) {
+    e.preventDefault();
+
+    const nameField = document.getElementById("name");
+    const emailField = document.getElementById("mail");
+    const messageField = document.getElementById("message");
+    const sendBtn = document.getElementById("send-btn");
+
+    const name = nameField.value.trim();
+    const email = emailField.value.trim();
+    const message = messageField.value.trim();
+
+    if (!name || !email || !message) {
+      alert("Merci de remplir tous les champs avant d’envoyer.");
+      return;
+    }
+
+    const formspreeUrl = "https://formspree.io/f/xdazzzev";
+
+    const formData = new FormData();
+    formData.append("name", name);
+    formData.append("email", email);
+    formData.append("message", message);
+
+    sendBtn.textContent = "Envoi...";
+    sendBtn.style.opacity = "0.5";
+    sendBtn.disabled = true;
+
+    try {
+      const response = await fetch(formspreeUrl, {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        alert("C'est envoyé ! Merci Robin te répondra bientôt.");
+        nameField.value = "";
+        emailField.value = "";
+        messageField.value = "";
+      } else {
+        alert("Oups ! Un problème est survenu. Vérifie ton email.");
+      }
+    } catch (error) {
+      alert("Erreur de connexion. Vérifie ton réseau.");
+    } finally {
+      sendBtn.textContent = "Envoyer";
+      sendBtn.style.opacity = "1";
+      sendBtn.disabled = false;
+    }
+  });

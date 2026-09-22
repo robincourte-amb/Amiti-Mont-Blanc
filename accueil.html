@@ -2,6 +2,14 @@
 <html lang="fr">
 <head>
 
+<!-- FAVICONS -->
+    <link rel="icon" type="image/png" href="../src/img/Logos/amb_back.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../src/img/Logos/amb_back.png" />
+    <link rel="shortcut icon" href="../src/img/Logos/amb_back.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../src/img/Logos/amb_back.png" />
+    <meta name="apple-mobile-web-app-title" content="Portfolio" />
+    <!-- <link rel="manifest" href="/favicon/site.webmanifest" /> -->
+
 <!------ LINKS ------>
 
     <link rel="stylesheet" href="../styles/css/index.css" />
@@ -20,7 +28,11 @@
     <!-- -------------------- HEADER -------------------- -->
     <header>
 <div class="navbar">
-    <div class="nav-icon"></div>
+    <div class="nav-icon">
+        <a href="#accueil" class="nav-link-page" aria-label="Aller vers Accueil">
+            <img src="../src/img/Logos/amb_back.png" alt="">
+        </a>
+    </div>
     <div class="nav-text">
         <a href="#accueil" class="nav-link-page" aria-label="Aller vers Accueil">
             <span>ACCEUIL</span>
@@ -34,12 +46,10 @@
         <a href="#aider" class="nav-link-page" aria-label="Aller vers Nous aider">
             <span>NOUS AIDER</span>
         </a>
-    </div>
-    <div class="nav-cta">
-        <a href="#contact" class="nav-link-cta" aria-label="Aller vers Nous contacter">
-            <span>Nous contacter</span>
-        </a>
-    </div>
+    </div>   
+    <a class="nav-cta" href="#contact" class="nav-link-cta" aria-label="Aller vers Nous contacter">
+        <span>NOUS CONTACTER</span>
+    </a>
 </div>
     </header>
     <!-- -------------------- MAIN -------------------- -->
@@ -48,7 +58,7 @@
 <!-- ----------- SECTION-1 ----------- -->
 
 <div class="fir-page" id="accueil">
-
+    <span>AMITIÉ <br> MONT-BLANC</span>
 </div>
 
 <!-- ----------- SECTION-2 ----------- -->
@@ -225,7 +235,7 @@
                 <span>Nous avons donc décidé qu’un pourcentage de la somme récoltée leur reviendrait : <span id="cs-case-bottom-bold-thi">5% des dons récoltés</span>, ce qui représente près de 1000 euros si notre budget prévisionnel est atteint grâce aux partenaires et sponsors.</span>
                 <div class="cs-case-bottom-more-thi-5">
                     <img src="../src/img/Logos/association_enzo.png" alt="">
-                    <a href="https://enzonotrepetitguerrier.jimdofree.com/">Association Enzo notre petit guerrier</a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://enzonotrepetitguerrier.jimdofree.com/">Association Enzo notre petit guerrier</a>
                 </div>
             </div>
             </div>
@@ -276,7 +286,12 @@
         </div>
         <div class="cs-third-fou">
             <div class="cs-thi-cta-fou">
-
+                <a class="cs-thi-cta-first-fou" target="_blank" rel="noopener noreferrer" href="https://www.helloasso.com/associations/amitie-mont-blanc/formulaires/2">                  
+                        <span>Faire un don</span>
+                </a>
+                 <div class="cs-thi-cta-second-fou">
+                    <a href="../src/docs/DOSSIER-SPONSORING-2025_2026.pdf" target="_blank">Télécharger le dossier de sponsoring</a>
+                 </div>
             </div>
             <div class="cs-thi-text-fou">
                 <span id="cs-thi-text-one-fou">Notre contrepartie</span>
@@ -310,7 +325,75 @@
         <span class="ts-text">NOUS CONTACTER</span>
     </div>
     <div class="container-section-fif">       
-        
+        <div class="cs-form-fif">
+            <form
+            action="https://formspree.io/f/xdazzzev"
+            method="POST"
+            id="my-form"
+            class="cs-form-send-area-fif"
+          >
+            <div class="cs-form-sa-name-fif">
+              <textarea name="name" id="name" rows="1" placeholder="Nom / Entreprise" required></textarea>
+            </div>
+
+            <div class="cs-form-sa-mail-fif">
+              <textarea name="email" id="mail" rows="1" placeholder="Email" required></textarea>
+            </div>
+
+            <div class="cs-form-sa-text-fif">
+              <textarea name="message" id="message" rows="5" placeholder="Message" required></textarea>
+            </div>
+
+            <div class="cs-form-sa-send-button-fif">
+              <button type="submit" id="send-btn">Envoyer</button>
+            </div>
+          </form>
+        </div>
+        <div class="cs-info-fif">
+            <div class="cs-info-first-fif">
+                <span>Nos coordonées</span>
+            </div>
+            <div class="cs-info-second-fif">
+                <span>amb.enise@gmail.com</span>
+            </div>
+            <div class="cs-info-third-fif">
+                <a target="_blank" rel="noopener noreferrer" href="https://youtube.com/@amb-enise?si=VncxhN5NdjrJF3kj">
+                        <img src="../src/img/Logos/logo_youtube.webp" alt="Logo Youtube">
+                </a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/url?q=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Famb-amiti%25C3%25A9-mont-blanc%2F%3FviewAsMember%3Dtrue&sa=D&sntz=1&usg=AOvVaw3TkZbJye5Lo1kuDQKOjnCC">
+                        <img src="../src/img/Logos/logo_linkedin.png" alt="Logo Linkedin">
+                </a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/amb_enise?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==">
+                        <img src="../src/img/Logos/logo_instagram.png" alt="Logo Instagram">
+                </a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/url?q=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61569868807557&sa=D&sntz=1&usg=AOvVaw2nhvVtBGmpIGY7FGqTCZnW">
+                        <img src="../src/img/Logos/logo_facebook.webp" alt="Logo Facebook">
+                </a>
+            </div>
+            <div class="cs-info-fourth-fif">
+                <div class="cs-info-fourth-one-fif">
+                    <span>ARNOULD Ugolin</span>
+                    <span>Président</span>
+                    <img src="" alt="Photo">
+                    <span>07 88 06 99 30</span>
+                    <span>ugolin.arnould@enise.fr</span>
+                </div>
+                <div class="cs-info-fourth-two-fif">
+                    <span>FAURIE Romain</span>
+                    <span>Communication</span>
+                    <img src="" alt="Photo">
+                    <span>07 81 58 73 87</span>
+                    <span>romain.faurie@enise.fr</span>
+                </div>
+                <div class="cs-info-fourth-three-fif">
+                    <span>BARBANÇON Justine</span>
+                    <span>Membre</span>
+                    <img src="" alt="Photo">
+                    <span>07 88 61 91 77</span>
+                    <span>justine.barbancon@enise.fr</span>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -361,6 +444,11 @@
                 <div class="fc-bottom-left-case">
                     <span>© 2026 Amitié Mont-Blanc ENISE. Tous droits réservés.</span>
                 </div>
+                <div class="fc-bottom-middle-case">
+                    <a href="../pages/mentions_legales.html">
+                        <span>Mentions légales</span>
+                    </a>
+                </div>
                 <div class="fc-bottom-right-case">
                     <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/amb_enise?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" aria-label="Aller vers Instagram de AMB"><span>Instagram</span></a>
                     <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/url?q=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Famb-amiti%25C3%25A9-mont-blanc%2F%3FviewAsMember%3Dtrue&sa=D&sntz=1&usg=AOvVaw3TkZbJye5Lo1kuDQKOjnCC" aria-label="Aller vers Linkedin de AMB"><span>Linkedin</span></a>
@@ -370,183 +458,6 @@
             </div>
         </div>
     </footer>
-
-<!-- Cacher la barre de défilement native -->
-<style>
-    /* Masque la scrollbar sur Chrome/Safari/Edge */
-    ::-webkit-scrollbar {
-        display: none;
-    }
-    /* Masque la scrollbar sur Firefox */
-    html {
-        scrollbar-width: none;
-    }
-
-    /* Conteneur de la barre Mont-Blanc */
-    #amb-scrollbar {
-        position: fixed;
-        right: 0;
-        top: 0;
-        width: 12px;
-        height: 100vh;
-        background-color: rgba(30, 58, 43, 0.05); /* Vert sapin très transparent */
-        border-left: 1px solid rgba(30, 58, 43, 0.1);
-        z-index: 1000;
-        transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.4s;
-        display: flex;
-        align-items: flex-end;
-        overflow: hidden;
-    }
-
-    /* État au survol (Aggrandissement vers la gauche) */
-    #amb-scrollbar:hover {
-        width: 180px;
-        background-color: rgba(248, 249, 250, 0.95); /* Blanc Neige / Glassmorphism */
-        backdrop-filter: blur(8px);
-        box-shadow: -10px 0 30px rgba(0,0,0,0.1);
-    }
-
-    /* Le relief du Mont-Blanc (SVG en fond de la barre) */
-    .amb-mountain-relief {
-        position: absolute;
-        right: 12px;
-        bottom: 0;
-        width: 160px;
-        height: 100%;
-        opacity: 0;
-        transform: translateX(20px);
-        transition: opacity 0.4s ease, transform 0.4s ease;
-        pointer-events: none;
-        /* Un SVG simple représentant le relief de la vallée au sommet */
-        background-image: url("data:image/svg+xml,%3Csvg preserveAspectRatio='none' viewBox='0 0 100 1000' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M100,1000 L100,0 L70,0 C60,50 90,100 40,200 C10,250 80,350 30,450 C0,500 60,600 20,750 C-10,850 50,950 0,1000 Z' fill='%231E3A2B' fill-opacity='0.08'/%3E%3Cpath d='M100,1000 L100,0 L85,0 C75,50 95,100 60,200 C40,250 90,350 50,450 C30,500 75,600 45,750 C25,850 70,950 35,1000 Z' fill='%231E3A2B' fill-opacity='0.15'/%3E%3C/svg%3E");
-        background-size: 100% 100%;
-        background-position: right bottom;
-    }
-
-    #amb-scrollbar:hover .amb-mountain-relief {
-        opacity: 1;
-        transform: translateX(0);
-    }
-
-    /* La réglette (Curseur) */
-    #amb-thumb {
-        position: absolute;
-        right: 2px;
-        bottom: 0; /* Commence tout en bas */
-        width: 8px;
-        height: 40px;
-        background-color: #C15C3D; /* Terracotta */
-        border-radius: 10px;
-        transition: width 0.3s ease, background-color 0.3s, right 0.3s;
-        pointer-events: none; /* Laisse le scroll naturel gérer le mouvement */
-    }
-
-    /* Transformation de la réglette au survol : devient une ligne de visée */
-    #amb-scrollbar:hover #amb-thumb {
-        width: 100%;
-        right: 0;
-        height: 2px;
-        background-color: #C15C3D;
-        border-radius: 0;
-        box-shadow: 0 0 10px rgba(193, 92, 61, 0.5);
-    }
-
-    /* Texte de l'altitude */
-    #amb-altitude-container {
-        position: absolute;
-        right: 20px;
-        bottom: 0;
-        opacity: 0;
-        transform: translateY(-50%) translateX(10px);
-        transition: opacity 0.3s ease, transform 0.3s ease;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-    }
-
-    #amb-scrollbar:hover #amb-altitude-container {
-        opacity: 1;
-        transform: translateY(-50%) translateX(0);
-    }
-
-    .amb-altitude-value {
-        font-family: 'Fira Code', monospace; /* Typographie Data de la charte */
-        font-weight: 700;
-        font-size: 24px;
-        color: #1E3A2B; /* Vert Sapin */
-        line-height: 1;
-    }
-
-    .amb-altitude-label {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 800;
-        font-size: 10px;
-        text-transform: uppercase;
-        color: #DFA460; /* Ocre Doré */
-        letter-spacing: 2px;
-    }
-</style>
-
-<!-- Structure HTML de la Custom Scrollbar -->
-<div id="amb-scrollbar">
-    <div class="amb-mountain-relief"></div>
-    <div id="amb-thumb"></div>
-    <div id="amb-altitude-container">
-        <span class="amb-altitude-value"><span id="amb-alt-number">0</span>m</span>
-        <span class="amb-altitude-label">Altitude</span>
-    </div>
-</div>
-
-<!-- Script de synchronisation du Scroll -->
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const scrollbar = document.getElementById('amb-scrollbar');
-        const thumb = document.getElementById('amb-thumb');
-        const altContainer = document.getElementById('amb-altitude-container');
-        const altNumber = document.getElementById('amb-alt-number');
-        
-        const MAX_ALTITUDE = 4807;
-
-        function updateScrollbar() {
-            // Calcul du pourcentage de défilement
-            const scrollTop = window.scrollY || document.documentElement.scrollTop;
-            const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
-            
-            let scrollPercent = 0;
-            if (scrollHeight > 0) {
-                scrollPercent = scrollTop / scrollHeight;
-            }
-
-            // On s'assure de rester entre 0 et 1
-            scrollPercent = Math.max(0, Math.min(1, scrollPercent));
-
-            // Logique Inversée : Plus on descend dans la page, plus on monte en CSS (bottom augmente)
-            // On ajuste pour que la réglette (qui fait 40px de haut par défaut) ne sorte pas de l'écran en haut
-            const thumbHeightOffset = scrollbar.matches(':hover') ? 2 : 40; 
-            
-            // Position en % (de 0 à 100%)
-            thumb.style.bottom = `calc(${scrollPercent * 100}% - ${scrollPercent * thumbHeightOffset}px)`;
-            
-            // Position du texte d'altitude aligné avec la ligne
-            altContainer.style.bottom = `calc(${scrollPercent * 100}% - ${scrollPercent * thumbHeightOffset}px)`;
-
-            // Mise à jour du chiffre (0 à 4807)
-            const currentAltitude = Math.floor(scrollPercent * MAX_ALTITUDE);
-            altNumber.textContent = currentAltitude;
-        }
-
-        // Écouter le défilement
-        window.addEventListener('scroll', updateScrollbar, { passive: true });
-        
-        // Mettre à jour si on redimensionne la fenêtre ou si la barre change d'état (survol)
-        window.addEventListener('resize', updateScrollbar);
-        scrollbar.addEventListener('mouseenter', updateScrollbar);
-        scrollbar.addEventListener('mouseleave', updateScrollbar);
-        
-        // Initialisation
-        updateScrollbar();
-    });
-</script>
     
 </body>
 </html>

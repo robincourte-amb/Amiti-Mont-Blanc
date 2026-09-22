@@ -49,7 +49,7 @@
 
 /* ----- DIV ----- */
 
-.fir-page, .sec-page, .thi-page, .fou-page, .fif-page{
+.sec-page, .thi-page, .fou-page, .fif-page{
     width: 100%;
     display: flex;
     justify-content: center;

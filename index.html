@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    
+    <!-- ENCODAGE & VIEWPORT -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO DE BASE -->
+    <title>Amitié Mont-Blanc (AMB) | Expédition Étudiante Solidaire</title>
+    <meta name="description" content="Découvrez AMB, une association à but non lucratif composée d’une équipe de 15 étudiants de l’École Nationale d’Ingénieurs de Saint-Étienne (ENISE). 6 d’entre eux atteindront le sommet du Mont Blanc (à 4807 mètres d’altitude) avec des objectifs solidaires, citoyens et sportifs.">
+    <link rel="canonical" href="https://amitie-mont-blanc.com/" />
+
+    <!-- OPEN GRAPH (Réseaux Sociaux : Facebook, LinkedIn, etc.) -->
+    <meta property="og:title" content="Amitié Mont-Blanc">
+    <meta property="og:description" content="Découvrez AMB, est une association à but non lucratif composée d’une équipe de 15 étudiants de l’École Nationale d’Ingénieurs de Saint-Étienne (ENISE). 6 d’entre eux atteindront le sommet du Mont Blanc (à 4807 mètres d’altitude) avec des objectifs solidaires, citoyens et sportifs.">
+    <meta property="og:image" content="https://amitie-mont-blanc.com/src/img/logo/perso/amb.webp">
+    <meta property="og:url" content="https://amitie-mont-blanc.com/">
+    <meta property="og:type" content="website">
+
+    <!-- FAVICONS -->
+
+    <link rel="icon" type="image/png" href="/src/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/src/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/src/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="AMB" />
+    <link rel="manifest" href="/src/favicon/site.webmanifest" />
+    
+    <!-- LINKS CSS -->
+    <link rel="stylesheet" href="../styles/css/var.css" />
+    <link rel="stylesheet" href="../styles/css/body.css" />
+    <link rel="stylesheet" href="../styles/css/index.css" />
+
+    <!-- SCRIPTS -->
+    <script src="../styles/js/config.js"></script>
+    <script defer src="../styles/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <title>Amitié Mont-Blanc</title>
+</head>
+<body>
+    <!-- =========================================
+         HEADER / NAVBAR
+    ========================================= -->
+   
+    <header>
+        <div class="navbar">
+            <div class="nav-icon">
+                <a href="#accueil" class="nav-link-page" aria-label="Aller vers Accueil">
+                    <img src="./src/img/logo/perso/amb.webp" alt="Logo de l'association AMB">
+                </a>
+            </div>
+            <div class="nav-text">
+                <a href="#accueil" class="nav-link-page" aria-label="Aller vers Accueil">
+                    <span data-text="nav_accueil"></span>
+                </a>
+                <a href="#projet" class="nav-link-page" aria-label="Aller vers Le projet">
+                    <span data-text="nav_projet"></span>
+                </a>
+                <a href="#pillier" class="nav-link-page" aria-label="Aller vers Les pilliers">
+                    <span data-text="nav_piliers"></span>
+                </a>
+                <a href="#aider" class="nav-link-page" aria-label="Aller vers Nous aider">
+                    <span data-text="nav_aider"></span>
+                </a>
+            </div>   
+            <a class="nav-cta" href="#contact" aria-label="Aller vers Nous contacter">
+                <span data-text="nav_contact"></span>
+            </a>
+
+            <button class="burger-menu" aria-label="Ouvrir le menu">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+    </button>
+    <div class="mobile-nav-overlay">
+    <nav class="mobile-nav-links">
+        <a href="#accueil" class="mobile-link" aria-label="Aller vers Accueil"><span data-text="nav_accueil"></span></a>
+        <a href="#projet" class="mobile-link" aria-label="Aller vers Le projet"><span data-text="nav_projet"></span></a>
+        <a href="#pillier" class="mobile-link" aria-label="Aller vers Les pilliers"><span data-text="nav_piliers"></span></a>
+        <a href="#aider" class="mobile-link" aria-label="Aller vers Nous aider"><span data-text="nav_aider"></span></a>
+        <a href="#contact" class="mobile-cta" aria-label="Aller vers Nous contacter"><span data-text="nav_contact"></span></a>
+    </nav>
+</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- =========================================
+         MAIN
+    ========================================= -->
+    <main>
+
+        <!-- ----------- SECTION-1 : ACCUEIL ----------- -->
+        <div class="fir-page" id="accueil">
+            <span data-text="hero_titre"></span>
+        </div>
+
+        <!-- ----------- SECTION-2 : LE PROJET ----------- -->
+        <div class="sec-page" id="projet">
+            <div class="text-section-sec">
+                <span class="ts-text-divider"></span>
+                <span class="ts-text" data-text="projet_tag"></span>
+            </div>
+            <div class="container-section-sec">       
+                <div class="cs-text-sec">
+                    <span data-text="projet_titre"></span>
+                    <span>est une association à but non lucratif composée d’une équipe de quinze étudiants de l’École Nationale d’Ingénieurs de Saint-Étienne (ENISE). Six d’entre eux atteindront le sommet du Mont Blanc (à 4807 mètres d’altitude) avec des objectifs solidaires, citoyens et sportifs. La cinquième édition de l’ascension se déroulera en Septembre 2025.</span>
+                </div>
+                <div class="cs-image-sec">
+                    <div class="image-thumbnail-carousel">
+                        <section class="image-display">
+                            <div class="screen"></div>
+                        </section>
+                        <section class="thumbnail-carousel">
+                            <button type="button" class="carousel__btn prev" aria-label="Previous slide">
+                                <svg width="16" height="16" fill="currentColor" class="arrow-icon arrow-left-circle" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+                                </svg>
+                            </button>
+                            <ul class="carousel__slider">
+                                <li class="carousel__slide">
+                                    <div class="thumbnail">
+                                        <img loading="lazy" src="./src/img/expedition/2018/banderole-seul-sommet.webp" alt="Alpiniste solitaire de l'équipe brandissant la banderole au sommet">
+                                    </div>
+                                </li>
+                                <li class="carousel__slide">
+                                    <div class="thumbnail">
+                                        <img loading="lazy" src="./src/img/expedition/2018/grand-groupe.webp" alt="Grand groupe d'étudiants d'Amitié Mont-Blanc réunis dans la neige">
+                                    </div>
+                                </li>
+                                <li class="carousel__slide">
+                                    <div class="thumbnail">
+                                        <img loading="lazy" src="./src/img/expedition/2018/groupe-complet.webp" alt="L'équipe complète du projet AMB avec équipement">
+                                    </div>
+                                </li>
+                                <li class="carousel__slide">
+                                    <div class="thumbnail">
+                                        <img loading="lazy" src="./src/img/expedition/2018/groupe-heureux-sommet.webp" alt="Liesse des membres de l'équipe arrivés au sommet">
+                                    </div>
+                                </li>
+                                <li class="carousel__slide">
+                                    <div class="thumbnail">
+                                        <img loading="lazy" src="./src/img/expedition/2018/groupe_avec_banderole.webp" alt="Équipe exposant la banderole avec les logos des sponsors">
+                                    </div>
+                                </li>
+                                <li class="carousel__slide">
+                                    <div class="thumbnail">
+                                        <img loading="lazy" src="./src/img/expedition/2018/montagne-coucher-soleil.webp" alt="Massif montagneux lors d'un coucher de soleil">
+                                    </div>
+                                </li>
+                                <li class="carousel__slide">
+                                    <div class="thumbnail">
+                                        <img loading="lazy" src="./src/img/expedition/2018/montagne-enneige.webp" alt="Panorama spectaculaire d'un sommet enneigé">
+                                    </div>
+                                </li>
+                                <li class="carousel__slide">
+                                    <div class="thumbnail">
+                                        <img loading="lazy" src="./src/img/expedition/2018/vue-randonneur.webp" alt="Vue à la première personne d'un randonneur en ascension">
+                                    </div>
+                                </li>
+                            </ul>
+                            <button type="button" class="carousel__btn next" aria-label="Next slide">
+                                <svg width="16" height="16" fill="currentColor" class="arrow-icon arrow-right-circle" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                                </svg>
+                            </button>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------- SECTION-3 : LES PILIERS ----------- -->
+        <div class="thi-page" id="pillier">
+            <div class="text-section-thi">
+                <span class="ts-text-divider"></span>
+                <span class="ts-text" data-text="nav_piliers"></span>
+            </div>
+            <div class="container-section-thi">       
+                <div class="cs-case-thi-1">
+                    <div class="cs-case-top-thi">
+                        <div class="cs-case-top-logo-thi">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                                <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                            </svg>
+                        </div>
+                        <div class="cs-case-top-title-thi">
+                            <span>01 - HUMAIN</span>
+                        </div>
+                    </div>
+                    <div class="cs-case-bottom-thi">
+                        <span>Le projet Amitié Mont-Blanc ENISE associe une <span id="cs-case-bottom-bold-thi">aventure humaine hors norme</span> à un défi sportif : l’ascension du célèbre Mont Blanc ou l’un de ses voisins culminant à plus de 4 000 mètres d’altitude. L’équipe complète compte 20 membres provenant de l’ENISE, issus de différentes formations et milieux sociaux. Ce grand nombre nous permet de garantir tous les deux ans une ascension. L’équipe qui se prépare à l’ascension du Mont-Blanc est composée de 6 à 12 étudiants en raison du budget important du projet. Tous les membres de l’équipe apprennent à se connaître au fil des entraînements et de l’avancement du projet. Ils apprennent également la vie d’association et de groupe, valeurs importantes dans la vie de tous les jours.</span>
+                    </div>
+                </div>
+                <div class="cs-case-thi-2">
+                    <div class="cs-case-top-thi">
+                        <div class="cs-case-top-logo-thi">
+                            <svg id="asset-icon-sport" class="w-full h-full text-sapin" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 62 L40 18 L65 62 Z" stroke="#1E3A2B" stroke-width="4" stroke-linejoin="round"/>
+                                <path d="M40 18 L40 62" stroke="#C15C3D" stroke-width="3" stroke-dasharray="3 3"/>
+                                <path d="M50 35 L62 25 M62 25 L68 31 M62 25 L55 20" stroke="#DFA460" stroke-width="3.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="cs-case-top-title-thi">
+                            <span>02 - SPORTIF</span>
+                        </div>
+                    </div>
+                    <div class="cs-case-bottom-thi">
+                        <span>L’ascension du Mont-Blanc sera l’aboutissement d’un <span id="cs-case-bottom-bold-thi">long travail de préparation à la fois physique et psychologique</span>. Nous apprendrons à nous découvrir les uns les autres, mais surtout nous-mêmes. La solidarité au sein de l’équipe nous permettra de traverser difficultés avec l’organisation et les entraînements, ou lors de l’ascension elle-même.</span>
+                    </div>
+                </div>
+                <div class="cs-case-thi-3">
+                    <div class="cs-case-top-thi">
+                        <div class="cs-case-top-logo-thi">
+                            <svg id="asset-icon-citoyen" class="w-full h-full" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M40 18 L70 32 L40 46 L10 32 Z" fill="#2D3436"/>
+                                <path d="M20 42 V56 C20 56 40 66 60 56 V42" stroke="#C15C3D" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+                                <circle cx="68" cy="42" r="4" fill="#DFA460"/>
+                            </svg>
+                        </div>
+                        <div class="cs-case-top-title-thi">
+                            <span>03 - CITOYEN</span>
+                        </div>
+                    </div>
+                    <div class="cs-case-bottom-thi">
+                        <span>Nous prenons également le parti de <span id="cs-case-bottom-bold-thi">promouvoir l’enseignement supérieur de la région</span> avec ses établissements et plus de 28 285 étudiants. Nous souhaitons ainsi contribuer à l’émergence d’une « <span id="cs-case-bottom-bold-thi">agglomération étudiante</span> » en rendant visible nos écoles sur le territoire. En effet, nous sommes des étudiants originaires de départements et de régions différentes. Nous avons également proposé des partenariats à d’autres écoles de Saint-Étienne afin de créer des liens entre elles et favoriser les échanges.</span>
+                    </div>
+                </div>
+                <div class="cs-case-thi-4">
+                    <div class="cs-case-top-thi">
+                        <div class="cs-case-top-logo-thi">
+                            <svg id="asset-icon-ecologie" class="w-full h-full" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M40 20 C25 20 20 35 20 55 C38 55 60 50 60 25 C50 20 40 20 40 20 Z" fill="#2E472D"/>
+                                <path d="M20 55 C40 40 50 30 60 25" stroke="#DFA460" stroke-width="3" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="cs-case-top-title-thi">
+                            <span>04 - ÉCOLOGIQUE</span>
+                        </div>
+                    </div>
+                    <div class="cs-case-bottom-thi">
+                        <span>De la même façon que Saint-Étienne Métropole et la Région, nous participerons à <span id="cs-case-bottom-bold-thi">l’éducation au développement durable</span> en réalisant une <span id="cs-case-bottom-bold-thi">ascension zéro déchet</span>. En effet, nous nous engageons à redescendre avec nous autant de déchets que notre condition physique nous le permettra lors de la redescente.</span>
+                        <span>Nous cherchons également à transmettre à notre public, ainsi que nos sponsors, des valeurs fortes et des engagements clairs, principalement autour des deux axes de réflexion suivants : <span id="cs-case-bottom-bold-thi">la surexploitation des montagnes</span> et <span id="cs-case-bottom-bold-thi">le dérèglement climatique</span>.</span>
+                    </div>
+                </div>
+                <div class="cs-case-thi-5">
+                    <div class="cs-case-left-thi-5">
+                        <div class="cs-case-top-thi">
+                            <div class="cs-case-top-logo-thi">
+                                <svg id="asset-icon-solidarite" class="w-full h-full" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M40 65 C20 50 15 35 25 25 C32 18 40 25 40 25 C40 25 48 18 55 25 C65 35 60 50 40 65 Z" fill="#C15C3D"/>
+                                    <circle cx="40" cy="38" r="6" fill="#DFA460"/>
+                                </svg>
+                            </div>
+                            <div class="cs-case-top-title-thi">
+                                <span>05 - SOLIDAIRE</span>
+                            </div>
+                        </div>
+                        <div class="cs-case-bottom-thi">
+                            <span>Notre objectif, en plus de relever un défi sportif, est également de <span id="cs-case-bottom-bold-thi">récolter des fonds</span> afin de venir en aide à une <span id="cs-case-bottom-bold-thi">association régionale</span> que nous soutenons. Cette année, nous soutenons l'<span id="cs-case-bottom-bold-thi">association Enzo notre petit guerrier</span> qui vient en aide à Enzo, un jeune garçon de 10 ans atteint de leucomalacie périventriculaire et de paralysie cérébrale.</span>
+                            <span>Nous avons donc décidé qu’un pourcentage de la somme récoltée leur reviendrait : <span id="cs-case-bottom-bold-thi">5% des dons récoltés</span>, ce qui représente près de 1000 euros si notre budget prévisionnel est atteint grâce aux partenaires et sponsors.</span>
+                            <div class="cs-case-bottom-more-thi-5">
+                                <img src="./src/img/logo/perso/association_enzo.webp" alt="Logo de l'association Enzo notre petit guerrier">
+                                <a target="_blank" rel="noopener noreferrer" href="https://enzonotrepetitguerrier.jimdofree.com/" aria-label="Aller vers l'association de Enzo notre petitt guerrier">Association Enzo notre petit guerrier</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cs-case-right-thi-5">
+                        <img src="./src/img/autre/enzo.webp" alt="Portrait du petit Enzo">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------- SECTION-4 : NOUS AIDER ----------- -->
+        <div class="fou-page" id="aider">
+            <div class="text-section-fou">
+                <span class="ts-text-divider"></span>
+                <span class="ts-text" data-text="nav_aider"></span>
+            </div>
+            <div class="container-section-fou">       
+                <div class="cs-first-fou">
+                    <div class="cs-fir-image-fou">
+                         <canvas id="budgetChart"></canvas>
+                    </div>
+                    <div class="cs-fir-text-fou">
+                        <span id="cs-fir-text-one-fou" data-text="budget_titre"></span>
+                        <span>Le budget prévisionnel du projet s’élève à <span data-text="budget_montant"></span> pour faire l’ascension du Mont-Blanc pour l’équipe de 12 personnes et comprend :</span>
+                        <ul>
+                            <li><span>Les <span id="cs-first-text-bold-fou">assurances</span></span></li>
+                            <li><span>La location de <span id="cs-first-text-bold-fou">matériel d’alpinisme</span></span></li>
+                            <li><span>Le <span id="cs-first-text-bold-fou">logement</span> en gîte pour les journées d’acclimatation</span></li>
+                            <li><span>Le <span id="cs-first-text-bold-fou">logement</span> en refuge et la <span id="cs-first-text-bold-fou">demi-pension</span> lors de l’ascension</span></li>
+                            <li><span>Les <span id="cs-first-text-bold-fou">guides</span> de haute-montagne (1 guide pour 2 personnes) pendant <span id="cs-first-text-bold-fou">4 jours</span> (2 jours pour l’acclimatation et 2 jours pour l’ascension)</span></li>
+                            <li><span>Les <span id="cs-first-text-bold-fou">déplacements</span> et la <span id="cs-first-text-bold-fou">logistique</span></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cs-second-fou">
+                    <div class="cs-sec-text-fou">
+                        <span id="cs-sec-text-one-fou">Comment nous aider ?</span>
+                        <span>La recherche de fond est une étape clef de notre projet !</span>
+                        <ul>
+                            <li><span><span id="cs-second-text-bold-fou">LE PARTENARIAT FINANCIER </span>: Il s’agit d’une aide financière qui nous permettra de payer nos dépenses afin d’effectuer notre projet.</span></li>
+                            <li><span><span id="cs-second-text-bold-fou">LE PARTENARIAT EN NATURE </span>: Vous pouvez nous aider en nous fournissant du matériel ou en nous assistant dans notre préparation physique et notre formation ou en nous proposant toute autre sorte de service qui pourrait nous aider à accomplir notre projet.</span></li>
+                        </ul>
+                    </div>
+                    <div class="cs-sec-image-fou">
+                         <canvas id="sourceChart"></canvas>
+                    </div>
+                </div>
+                <div class="cs-third-fou">
+                    <div class="cs-thi-cta-fou">
+                        <a class="cs-thi-cta-first-fou" data-link="lien_don" target="_blank" rel="noopener noreferrer">                  
+                            <span>Faire un don</span>
+                        </a>
+                         <div class="cs-thi-cta-second-fou">
+                            <a data-link="lien_dossier" target="_blank">Télécharger le dossier de sponsoring</a>
+                         </div>
+                    </div>
+                    <div class="cs-thi-text-fou">
+                        <span id="cs-thi-text-one-fou">Notre contrepartie</span>
+                        <span>Chaque partenaire aura la possibilité d’avoir son logo floqué sur la banderole que nous acheminerons en haut du Mont-Blanc. Chaque année nous mettons tout en œuvre pour mettre en avant nos sponsors sur nos réseaux sociaux (LinkedIn, Instagram, Facebook...) et publions des articles dans la presse locale.</span>
+                        <span>Vous serez alors <span id="cs-third-text-bold-fou">visible au sommet, mais également sur les vidéos et photos faites tout le long de la préparation</span> ainsi que sur <span id="cs-third-text-bold-fou">les réseaux sociaux de l’équipe : Facebook, LinkedIn, Youtube et Instagram afin de toucher le maximum de clients potentiels</span>.</span>
+                        <span>De plus, c’est une manière originale de promouvoir votre entreprise en donnant une <span id="cs-third-text-bold-fou">image solidaire et citoyenne</span> à celle-ci.</span>
+                        <span>Pour participer à notre incroyable aventure, devenez notre sponsor, ainsi vous <span id="cs-third-text-bold-fou">serez un ambassadeur du projet AMB.</span></span>
+                        <span><span id="cs-third-text-bold-fou">Le projet AMB 2025</span> se clôturera par un événement ouvert à tous avec une exposition photo et vidéo retraçant l’évolution de notre projet et une conférence durant laquelle nous présenterons un retour d’expériences.</span>
+                    </div>
+                </div>
+                <div class="cs-fourth-fou">
+                    <div class="container">
+                        <img src="./src/img/logo/sponsor/centrale_lyon_enise.webp" alt="Logo de l'école Centrale Lyon ENISE">
+                        <img src="./src/img/logo/sponsor/compagnie_thermique_europeenne.webp" alt="Logo de la Compagnie Thermique Européenne">
+                        <img src="./src/img/logo/sponsor/credit_agricole.webp" alt="Logo de Crédit Agricole">
+                        <img src="./src/img/logo/sponsor/horizon_jardin.webp" alt="Logo d'Horizon Jardin">
+                        <img src="./src/img/logo/sponsor/intersport.webp" alt="Logo d'Intersport">
+                        <img src="./src/img/logo/sponsor/kromm.webp" alt="Logo de Kromm">
+                        <img src="./src/img/logo/sponsor/parlons_sport_loire.webp" alt="Logo de Parlons Sport Loire">
+                        <img src="./src/img/logo/sponsor/region_auvergne_rhone_alpes.webp" alt="Logo de la région Auvergne-Rhône-Alpes">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------- SECTION-5 : NOUS CONTACTER ----------- -->
+        <div class="fif-page" id="contact">
+            <div class="text-section-fif">
+                <span class="ts-text-divider"></span>
+                <span class="ts-text" data-text="nav_contact"></span>
+            </div>
+            <div class="container-section-fif">       
+                <div class="cs-form-fif">
+                    <form
+                        action="https://formspree.io/f/mppwdgdk"
+                        method="POST"
+                        id="my-form"
+                        class="cs-form-send-area-fif"
+                    >
+                        <div class="cs-form-sa-name-fif">
+                          <textarea name="name" id="name" rows="1" placeholder="Nom / Entreprise" required></textarea>
+                        </div>
+                        <div class="cs-form-sa-mail-fif">
+                          <textarea name="email" id="mail" rows="1" placeholder="Email" required></textarea>
+                        </div>
+                        <div class="cs-form-sa-text-fif">
+                          <textarea name="message" id="message" rows="5" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="cs-form-sa-send-button-fif" id="send-btn">
+                          <button type="submit">Envoyer</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="cs-info-fif">
+                    <div class="cs-info-first-fif">
+                        <span>Nos coordonées</span>
+                    </div>
+                    <div class="cs-info-second-fif">
+                        <span data-text="contact_email_general"></span>
+                    </div>
+                    <div class="cs-info-third-fif">
+                        <a data-link="lien_youtube" target="_blank" rel="noopener noreferrer">
+                                <img src="./src/img/logo/reseau/logo_youtube.webp" alt="Logo Youtube">
+                        </a>
+                        <a data-link="lien_linkedin" target="_blank" rel="noopener noreferrer">
+                                <img src="./src/img/logo/reseau/logo_linkedin.webp" alt="Logo Linkedin">
+                        </a>
+                        <a data-link="lien_instagram" target="_blank" rel="noopener noreferrer">
+                                <img src="./src/img/logo/reseau/logo_instagram.webp" alt="Logo Instagram">
+                        </a>
+                        <a data-link="lien_facebook" target="_blank" rel="noopener noreferrer">
+                                <img src="./src/img/logo/reseau/logo_facebook.webp" alt="Logo Facebook">
+                        </a>
+                    </div>
+                    <div class="cs-info-fourth-fif">
+                        <div class="cs-info-fourth-one-fif">
+                            <span data-text="membre1_nom"></span>
+                            <span data-text="membre1_role"></span>
+                            <img src="" alt="Photo d'Ugolin Arnould">
+                            <span data-text="membre1_tel"></span>
+                            <span data-text="membre1_email"></span>
+                        </div>
+                        <div class="cs-info-fourth-two-fif">
+                            <span data-text="membre2_nom"></span>
+                            <span data-text="membre2_role"></span>
+                            <img src="" alt="Photo de Romain Faurie">
+                            <span data-text="membre2_tel"></span>
+                            <span data-text="membre2_email"></span>
+                        </div>
+                        <div class="cs-info-fourth-three-fif">
+                            <span data-text="membre3_nom"></span>
+                            <span data-text="membre3_role"></span>
+                            <img src="" alt="Photo de Justine Barbançon">
+                            <span data-text="membre3_tel"></span>
+                            <span data-text="membre3_email"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- =========================================
+         FOOTER
+    ========================================= -->
+    <footer>
+        <div class="footer-container">
+            <div class="fc-top-case">
+                <div class="fc-top-left-case">
+                    <img src="./src/img/logo/perso/amb.webp" alt="Logo de l'association AMB">
+                </div>
+                <div class="fc-top-middle-case">
+                    <span>NAVIGATION</span>
+                    <ul>
+                        <li><a href="#accueil" class="nav-link-page" aria-label="Aller vers Accueil">
+                        <span>Accueil</span>
+                        </a></li>
+                        <li><a href="#projet" class="nav-link-page" aria-label="Aller vers Le projet">
+                        <span>Les projets</span>
+                        </a></li>
+                        <li><a href="#pillier" class="nav-link-page" aria-label="Aller vers Les pilliers">
+                        <span>Les pilliers</span>
+                        </a></li>
+                        <li><a href="#aider" class="nav-link-page" aria-label="Aller vers Nous aider">
+                        <span>Nous aider</span>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="fc-top-right-case">
+                    <span>ADRESSE</span>
+                    <ul>
+                        <li><a data-link="lien_maps" target="_blank" rel="noopener noreferrer" class="map-link" aria-label="Aller vers Maps Centrale Lyon ENISE">
+                        <span>Centrale Lyon ENISE</span>
+                        </a></li>
+                        <li><a data-link="lien_maps" target="_blank" rel="noopener noreferrer" class="map-link" aria-label="Aller vers Maps Centrale Lyon ENISE">
+                        <span>58 rue Jean Parot</span>
+                        </a></li>
+                        <li><a data-link="lien_maps" target="_blank" rel="noopener noreferrer" class="map-link" aria-label="Aller vers Maps Centrale Lyon ENISE">
+                        <span>42100 Saint-Étienne</span>
+                        </a></li>
+                        <li><a href="#contact" class="nav-link-cta" aria-label="Aller vers Nous contacter">
+                        <span>Nous contacter</span>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fc-bottom-case">
+                <div class="fc-bottom-left-case">
+                    <span data-text="footer_copyright"></span>
+                </div>
+                <div class="fc-bottom-middle-case">
+                    <a href="./mentions_legales.html">
+                        <span>Mentions légales</span>
+                    </a>
+                </div>
+                <div class="fc-bottom-right-case">
+                    <a data-link="lien_instagram" target="_blank" rel="noopener noreferrer" aria-label="Aller vers Instagram de AMB"><span>Instagram</span></a>
+                    <a data-link="lien_linkedin" target="_blank" rel="noopener noreferrer" aria-label="Aller vers Linkedin de AMB"><span>Linkedin</span></a>
+                    <a data-link="lien_youtube" target="_blank" rel="noopener noreferrer" aria-label="Aller vers Youtube de AMB"><span>Youtube</span></a>
+                    <a data-link="lien_facebook" target="_blank" rel="noopener noreferrer" aria-label="Aller vers Facebook de AMB"><span>Facebook</span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

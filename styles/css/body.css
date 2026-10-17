@@ -1,66 +1,33 @@
 html {
-  scroll-padding-top: 7vh;
-  scroll-behavior: smooth; /* Ajoute un effet de glissement fluide très agréable */
+    scroll-behavior: smooth;
+    scroll-padding-top: 7vh;
+    scrollbar-width: none;
+    overflow-y: visible;
+}
+
+body{
+    background-color: var(--vert-sapin);
+    overflow-y: visible;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-size: 1rem;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    overflow: hidden;
 }
 
-li {
-  list-style: none;
+li { list-style: none; }
+h1, h2 { font-weight: normal; }
+a { text-decoration: none; }
+
+img {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
 }
 
-h1 {
-  font-style: none;
-}
-
-h2 {
-  font-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-/* Masque la scrollbar sur Chrome/Safari/Edge */
-    ::-webkit-scrollbar {
-        display: none;
-    }
-    /* Masque la scrollbar sur Firefox */
-    html {
-        scrollbar-width: none;
-    }
-
-body {
-  --sb-track-color: #f8f9fa;
-  --sb-thumb-color: #c15c3d;
-  --sb-size: 10px;
-}
-
-body::-webkit-scrollbar {
-  width: var(--sb-size)
-}
-
-body::-webkit-scrollbar-track {
-  background: var(--sb-track-color);
-  border-radius: 5px;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: var(--sb-thumb-color);
-  border-radius: 3px;
-  
-}
-
-@supports not selector(::-webkit-scrollbar) {
-  body {
-    scrollbar-color: var(--sb-thumb-color)
-                     var(--sb-track-color);
-  }
-}
+::-webkit-scrollbar { display: none; }

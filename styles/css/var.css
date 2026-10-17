@@ -1,81 +1,52 @@
+:root {
+    /* ----- 1. COULEURS ----- */
+    --vert-sapin: #1E3A2B;
+    --terracotta: #C15C3D;
+    --ocre-dore: #DFA460;
+    --blanc-neige: #F8F9FA;
+    --main-color: #FFFFFF;
+    --main-text: rgb(74, 85, 104);
 
-/* ----- COULEURS ----- */
+    /* ----- 2. TYPOGRAPHIES GROUPÉES (Font Shorthand) ----- */
+    /* Syntaxe : font-style font-weight font-size/line-height font-family */
+    --typo-hero: normal 900 6rem/1 "Montserrat", sans-serif;
+    --typo-h1: normal 600 2.5rem/1.2 "Open_Sans", sans-serif;
+    --typo-h2: normal 600 2rem/1.2 "Open_Sans", sans-serif;
+    --typo-h3-tag: normal 700 0.875rem/1.2 "Montserrat", sans-serif;
+    --typo-hero-ml: normal 900 5rem/1 "Montserrat", sans-serif;
+    --typo-hero-ml-small: normal 900 2rem/1 "Montserrat", sans-serif;
+    
+    --typo-body: normal 400 1rem/1.5 "Open_Sans", sans-serif;
+    --typo-body-bold: normal 600 1rem/1.5 "Open_Sans", sans-serif;
+    --typo-body-small:normal 400 0.75rem/1 "Open_Sans", sans-serif;
+    
+    --typo-nav: normal 600 0.9rem/1 "Montserrat", sans-serif;
+    --typo-btn: normal 600 0.7rem/1 "Montserrat", sans-serif;
+    --typo-btn-large: normal 900 1.2rem/1 "Montserrat", sans-serif;
 
-@property --vert-sapin {
-    syntax: '<color>';
-    inherits: true;
-    initial-value: #1E3A2B;
-}
-@property --terracotta {
-    syntax: '<color>';
-    inherits: true;
-    initial-value: #C15C3D;
-}
-@property --ocre-dore {
-    syntax: '<color>';
-    inherits: true;
-    initial-value: #DFA460;
-}
-@property --blanc-neige {
-    syntax: '<color>';
-    inherits: true;
-    initial-value: #F8F9FA;
+    /* ----- 3. BORDURES ET OMBRES ----- */
+    --border-light: 1px solid rgba(255, 255, 255, 0.1);
+    --border-dark: 1px solid rgba(0, 0, 0, 0.05);
+    
+    --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    --shadow-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+
+    /* ----- 4. FORMES ET ESPACEMENTS ----- */
+    --radius-btn: 40px;
+    --radius-card: 50px;
+    --radius-input: 20px;
+    --pad-section: 6vh 6vw; /* Espacement global modifiable d'un coup */
+
+    /* ----- 5. ANIMATIONS ----- */
+    --transition-base: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@property --main-color {
-    syntax: '<color>';
-    inherits: true;
-    initial-value: rgb(255 255 255);
-}
-
-@property --main-text-color {
-    syntax: '<color>';
-    inherits: true;
-    initial-value: rgb(74 85 104);
-}
-
-/* ----- FONTS ----- */
-
+/* Importation des polices */
 @font-face {
-  font-family: "Montserrat";
-  src: url(./../../src/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+    font-family: "Montserrat";
+    src: url(./../../src/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
-
 @font-face {
-  font-family: "Open_Sans";
-  src: url(./../../src/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
-}
-
-
-/* ----- DIV ----- */
-
-.sec-page, .thi-page, .fou-page, .fif-page{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.text-section-sec, .text-section-thi, .text-section-fou, .text-section-fif{
-    height: 10vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding-left: 10vw;
-    gap:3vw;
-}
-
-.ts-text-divider{
-    height: 0.6vh;
-    width: 4vw;
-    background-color: var(--terracotta);
-    border-radius: 99999px;
-}
-
-.ts-text{
-    font-family: "montserrat";
-    font-size: 0.875rem;
-    color: var(--terracotta);
-    font-weight: 700;
+    font-family: "Open_Sans";
+    src: url(./../../src/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
 }
